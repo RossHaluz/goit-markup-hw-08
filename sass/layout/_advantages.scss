@@ -1,0 +1,33 @@
+.advantages__iteam {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--second-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.advantages__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.advantages__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.advantages__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+}

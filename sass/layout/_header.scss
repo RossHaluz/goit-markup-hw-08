@@ -1,0 +1,26 @@
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ececec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-main-color);
+    z-index: 999;
+
+    &__wrrap{
+        display: flex;
+            align-items: center;
+    }
+    
+    &__logo {
+    margin-right: 93px;
+
+       &--black{
+        color: var(--main-text-color);
+    }
+}
+}
+

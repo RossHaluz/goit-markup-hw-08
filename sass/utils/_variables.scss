@@ -1,0 +1,29 @@
+:root {
+    --main-text-color: #212121;
+    /* Основний колір тексту */
+    --second-text-color: #757575;
+    /* Додатковий колір тексту */
+    --hover-text-color: #2196f3;
+    /* Колір тексту при наведені + лого */
+    --white-text-color: #fff;
+    /* Колір зеголовку h1 + текст в футері */
+
+    --bg-main-color: #fff;
+    /* Основний фон сайта */
+    --second-bg-color: #f5f4fa;
+    /* Додатковий колір фона */
+    --hero-bg-color: #2f303a;
+    /* Фон для Hero і Footer */
+    
+    --color-soacial: #afb1b8;
+    /*Колір іконок до соц. мереж*/
+    --color-icons: #afb1b8;
+    /*Колір іконок*/
+    --work-bg-color: rgba(47,
+            48,
+            58,
+            0.8);
+    /* Колір фону в сексій "Чим ми займаємось" */
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --button-hover: #188ce8;
+}

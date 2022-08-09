@@ -1,0 +1,28 @@
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+    /* Наслідує колір */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}

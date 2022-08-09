@@ -1,0 +1,32 @@
+.soicial-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+        &__link {
+            display: inline-flex;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            justify-content: center;
+            fill: var(--color-icons);
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: fill var(--transition), background-color var(--transition);
+
+                &:hover,
+                &:focus {
+                    fill: var(--white-text-color);
+                    background-color: var(--hover-text-color);
+                }
+        }
+    
+        &__icon {
+            width: 20px;
+            height: 20px;
+
+            &--white{
+                fill: var(--white-text-color);
+            }
+        }
+}
