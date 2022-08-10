@@ -1,11 +1,11 @@
 .footer {
     background-color: var(--hero-bg-color);
-    padding: 60px 0;
+    padding: 60px 0px;
 
         &__flex {
-            display: flex;
-            align-items: baseline;
-            gap: 70px;
+            // display: flex;
+            // align-items: baseline;
+            // gap: 70px;
         }
     
         &__logo {
@@ -18,14 +18,40 @@
         }
 }
 
+.footer__flex{
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer-tablet-flex{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: unset;
+        margin-bottom: 0;
+        gap: 70px;
+    }
+}
 
 .footer-address {
     font-style: inherit;
     color: rgba(255, 255, 255, 0.6);
 
     &__list {
-        margin-top: 0;
-        margin-bottom: 0;
+        @media screen and (max-width: 767px) {
+            margin-top: 0;
+            margin-bottom: 60px;
+        }
         }
     
     &__item {
@@ -37,7 +63,7 @@
         }
 
         &:not(:last-child){
-            margin-bottom: 9px;
+            margin-bottom: 8px;
         }
     }
 
@@ -68,13 +94,15 @@
 .subscribe-form__flex {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
 }
 
 .subscribe-form__input {
     outline: 0;
-    width: 358px;
     padding: 15px 0 15px 16px;
-    margin-right: 12px;
     background-color: transparent;
     border-radius: 4px;
     font-size: 16px;
@@ -83,6 +111,23 @@
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        width: 358px;
+        margin-right: 12px;
+
+    }
 }
 
 .subscribe-form__icon {

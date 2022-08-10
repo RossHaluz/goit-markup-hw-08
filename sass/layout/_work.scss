@@ -24,5 +24,9 @@
             color: var(--white-text-color);
             background-color: var(--work-bg-color);
         }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 
