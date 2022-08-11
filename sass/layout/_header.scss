@@ -12,11 +12,34 @@
 
     &__wrrap{
         display: flex;
+        align-items: center;
+
+        @media screen and (min-width:768px) {
+            justify-content: space-between;
             align-items: center;
+        }
+
+            @media screen and (max-width: 767px) {
+                justify-content: space-between;
+            }
+
+            @media screen and (min-width: 1200px) {
+                justify-content: normal;
+            }
     }
     
     &__logo {
-    margin-right: 93px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+    }
+         @media screen and (min-width: 1200px) {
+             margin-right: 92px;
+         }
+
+    @media screen and (max-width: 767px) {
+        margin-right: 0;
+    }
 
        &--black{
         color: var(--main-text-color);

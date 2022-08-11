@@ -28,7 +28,6 @@
             >Web<span class="header__logo--black">Studio</span></a
           >
 
-          <!-- Header-nav  -->
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__iteam">
@@ -47,7 +46,6 @@
             </ul>
           </nav>
 
-          <!-- Contacts-header  -->
           <ul class="contacts-header list">
             <li class="contacts-header__item">
               <a
@@ -69,12 +67,47 @@
               >
             </li>
           </ul>
+
+          <button
+            type="buttom"
+            class="mobile-menu"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="mobile-menu__icons"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="mobile-menu__icon-menu"
+                href="./image/icons.svg#menu"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- <div class="menu-container" data-menu>
+            <button type="button" class="mobile-menu" data-menu-button>
+              <svg
+                class="mobile-menu__icons"
+                width="40"
+                height="40"
+                aria-label="Закрити мобыльне меню"
+              >
+                <use
+                  class="mobile-menu__icon-menu-close"
+                  href="./image/icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div> -->
         </div>
       </div>
     </header>
 
     <!--Портфоліо-->
-    <main>
+    <!-- <main>
       <section class="portfolio section">
         <div class="container">
           <h1 hidden>Портфолио</h1>
@@ -107,10 +140,10 @@
                 Маркетинг
               </button>
             </li>
-          </ul>
+          </ul> -->
 
-          <!--Кейси-->
-          <ul class="portfolio-list card-set list">
+    <!--Кейси-->
+    <!-- <ul class="portfolio-list card-set list">
             <li class="portfolio-list__iteam">
               <a
                 class="portfolio-list__link link"
@@ -379,73 +412,75 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__flex container">
-        <div class="footer__address-wrrapp">
-          <a href="" class="footer__logo logo"
-            >Web<span class="footer__logo--white">Studio</span></a
-          >
-          <address class="footer-address">
-            <ul class="footer-address__list list">
-              <li class="footer-address__item">
-                <a
-                  href="https://goo.gl/maps/QsVtSvGYJMmkZGTLA"
-                  class="footer-address__link link"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-tablet-flex">
+          <div class="footer__address-wrrapp">
+            <a href="" class="footer__logo logo"
+              >Web<span class="footer__logo--white">Studio</span></a
+            >
+            <address class="footer-address">
+              <ul class="footer-address__list list">
+                <li class="footer-address__item">
+                  <a
+                    href="https://goo.gl/maps/QsVtSvGYJMmkZGTLA"
+                    class="footer-address__link link"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a
+                    class="footer-address__link link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="footer-address__link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="subscribe footer-subscribe">
+            <b class="footer-subscribe__title">присоединяйтесь</b>
+            <ul class="soicial-list list">
+              <li class="soicial-list__item">
+                <a href="" class="soicial-list__link" rel="noopener noreferrer">
+                  <svg class="soicial-list__icon soicial-list__icon--white">
+                    <use href="./image/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a
-                  class="footer-address__link link"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="soicial-list__item">
+                <a href="" class="soicial-list__link" rel="noopener noreferrer">
+                  <svg class="soicial-list__icon soicial-list__icon--white">
+                    <use href="./image/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a class="footer-address__link link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="soicial-list__item">
+                <a href="" class="soicial-list__link" rel="noopener noreferrer">
+                  <svg class="soicial-list__icon soicial-list__icon--white">
+                    <use href="./image/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soicial-list__item">
+                <a href="" class="soicial-list__link" rel="noopener noreferrer">
+                  <svg class="soicial-list__icon soicial-list__icon--white">
+                    <use href="./image/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="subscribe footer-subscribe">
-          <b class="footer-subscribe__title">присоединяйтесь</b>
-          <ul class="soicial-list list">
-            <li class="soicial-list__item">
-              <a href="" class="soicial-list__link" rel="noopener noreferrer">
-                <svg class="soicial-list__icon soicial-list__icon--white">
-                  <use href="./image/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soicial-list__item">
-              <a href="" class="soicial-list__link" rel="noopener noreferrer">
-                <svg class="soicial-list__icon soicial-list__icon--white">
-                  <use href="./image/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soicial-list__item">
-              <a href="" class="soicial-list__link" rel="noopener noreferrer">
-                <svg class="soicial-list__icon soicial-list__icon--white">
-                  <use href="./image/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soicial-list__item">
-              <a href="" class="soicial-list__link" rel="noopener noreferrer">
-                <svg class="soicial-list__icon soicial-list__icon--white">
-                  <use href="./image/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe footer-subscribe footer-mailing">
           <b class="footer-subscribe__title">Підпишіться на розсилку</b>
