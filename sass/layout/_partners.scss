@@ -1,17 +1,25 @@
 .partners__title {
-    margin-bottom: 50px;
-}
+    margin-bottom: 30px;
 
-.partners__item {
-    flex-basis: calc((100% - 30px) / 2);
-@media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 60px) / 3);
-    }
     @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - 150px) / 6);
+        margin-bottom: 50px;
     }
 }
 
+.partners__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+    --items: 2;
+
+    @media screen and (min-width: 768px) {
+        --items: 3;
+    }
+
+    @media screen and (min-width:1200px) {
+        --items: 6;
+    }
+}
 .partners__link {
     display: flex;
     align-items: center;

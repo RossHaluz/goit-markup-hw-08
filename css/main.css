@@ -25,6 +25,8 @@
   /* Колір фону в сексій "Чим ми займаємось" */
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --button-hover: #188ce8;
+  --indent: 30px;
+  --items: 4;
 }
 
 .visually-hidden {
@@ -144,6 +146,11 @@ img {
       flex-wrap: wrap;
 }
 
+.card-set-iteam {
+  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -215,11 +222,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  .soicial-list {
-    margin-bottom: 60px;
-  }
 }
 .soicial-list__link {
   display: -webkit-inline-box;
@@ -926,35 +928,23 @@ img {
   }
 }
 
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 1;
+}
 @media screen and (min-width: 768px) {
   .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages__iteam {
-    margin-bottom: 30px;
-  }
-  .advantages__iteam:last-child {
-    margin-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .advantages__iteam {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    --items: 2;
   }
 }
 @media screen and (min-width: 1200px) {
-  .advantages__iteam {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
+  .advantages__list {
+    --items: 4;
   }
 }
 
@@ -1034,7 +1024,31 @@ img {
   background-color: var(--second-bg-color);
 }
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
+}
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --items: 4;
+  }
 }
 .team__iteam {
   text-align: center;
@@ -1042,11 +1056,14 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
 }
 .team__wrapper {
-  padding: 30px;
+  padding: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__wrapper {
+    padding: 30px;
+  }
 }
 .team__person {
   margin-top: 0;
@@ -1067,23 +1084,31 @@ img {
 }
 
 .partners__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .partners__title {
+    margin-bottom: 50px;
+  }
 }
 
-.partners__item {
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
+.partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 2;
 }
 @media screen and (min-width: 768px) {
-  .partners__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
+  .partners__list {
+    --items: 3;
   }
 }
 @media screen and (min-width: 1200px) {
-  .partners__item {
-    -ms-flex-preferred-size: calc((100% - 150px) / 6);
-        flex-basis: calc((100% - 150px) / 6);
+  .partners__list {
+    --items: 6;
   }
 }
 
@@ -1200,6 +1225,11 @@ img {
 
 .footer-mailing {
   margin-left: auto;
+}
+@media screen and (max-width: 1200px) {
+  .footer-mailing {
+    margin-top: 60px;
+  }
 }
 
 .footer-subscribe__title {

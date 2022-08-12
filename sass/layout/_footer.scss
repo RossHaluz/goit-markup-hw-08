@@ -81,6 +81,10 @@
 
 .footer-mailing {
     margin-left: auto;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 60px;
+    }
 }
 
 .footer-subscribe__title {

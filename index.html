@@ -130,8 +130,8 @@
       <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Приемущества</h2>
-          <ul class="advantages__list list">
-            <li class="advantages__iteam">
+          <ul class="advantages__list card-set list">
+            <li class="advantages__iteam card-set-iteam">
               <div class="advantages__thumb">
                 <svg class="advantages__icon">
                   <use href="./image/icons.svg#antenna"></use>
@@ -143,8 +143,7 @@
                 формированию позиции.
               </p>
             </li>
-
-            <li class="advantages__iteam icon-punctuality">
+            <li class="advantages__iteam card-set-iteam">
               <div class="advantages__thumb">
                 <svg class="advantages__icon">
                   <use href="./image/icons.svg#clock"></use>
@@ -156,7 +155,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantages__iteam icon-planning">
+            <li class="advantages__iteam card-set-iteam">
               <div class="advantages__thumb">
                 <svg class="advantages__icon">
                   <use href="./image/icons.svg#diagram"></use>
@@ -168,7 +167,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages__iteam icon-astronaut">
+            <li class="advantages__iteam card-set-iteam">
               <div class="advantages__thumb">
                 <svg class="advantages__icon">
                   <use href="./image/icons.svg#astronaut"></use>
@@ -221,17 +220,26 @@
       </section> -->
 
       <!-- Наша команда -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="team__list card-set list">
-            <li class="team__iteam">
+            <li class="team__iteam card-set-iteam">
               <img
-                src="./image/team/member1.jpg"
+              srcset="
+              ./image/team/img-1@1x-270-lg.jpg 270w, 
+              ./image/team/img-1@1-354-md.jpg 354w, 
+              ./image/team/img-1@1x-450-sm.jpg 450w,
+              ./image/team/img-1@2x-540-lg.jpg 540w,
+              ./image/team/img-1@2x-708-md.jpg 708w,
+              ./image/team/img-1@2x-900-sm.jpg 900w,"
+
+              sizes="(min-width:1200px) 270px, (min-width:768) 354px, 100vw"
+                src="./image/team/img-1@1x-450-sm.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-                class="team__img"
+                width="450"
+                height="460"
+                class="team__img"  
               />
               <div class="team__wrapper">
                 <h3 class="team__person">Игорь Демьяненко</h3>
@@ -284,12 +292,21 @@
                 </ul>
               </div>
             </li>
-            <li class="team__iteam">
+            <li class="team__iteam card-set-iteam">
               <img
-                src="./image/team/member2.jpg"
+               srcset="
+              ./image/team/img-2@1x-270-lg.jpg 270w, 
+              ./image/team/img-2@1-354-md.jpg 354w, 
+              ./image/team/img-2@1x-450-sm.jpg 450w,
+              ./image/team/img-2@2x-540-lg.jpg 540w,
+              ./image/team/img-2@2x-708-md.jpg 708w,
+              ./image/team/img-2@2x-900-sm.jpg 900w,"
+
+              sizes="(min-width:1200px) 270px, (min-width:768) 354px, 100vw"
+                src="./image/team/img-2@1x-450-sm.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="team__img"
               />
               <div class="team__wrapper">
@@ -343,12 +360,21 @@
                 </ul>
               </div>
             </li>
-            <li class="team__iteam">
+            <li class="team__iteam card-set-iteam">
               <img
-                src="./image/team/member3.jpg"
+              srcset="
+              ./image/team/img-3@1x-270-lg.jpg 270w, 
+              ./image/team/img-3@1-354-md.jpg 354w, 
+              ./image/team/img-3@1x-450-sm.jpg 450w,
+              ./image/team/img-3@2x-540-lg.jpg 540w,
+              ./image/team/img-3@2x-708-md.jpg 708w,
+              ./image/team/img-3@2x-900-sm.jpg 900w,"
+
+              sizes="(min-width:1200px) 270px, (min-width:768) 354px, 100vw"
+                src="./image/team/img-3@1x-450-sm.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="team__img"
               />
               <div class="team__wrapper">
@@ -402,12 +428,21 @@
                 </ul>
               </div>
             </li>
-            <li class="team__iteam">
+            <li class="team__iteam card-set-iteam">
               <img
-                src="./image/team/member4.jpg"
+              srcset="
+              ./image/team/img-4@1x-270-lg.jpg 270w, 
+              ./image/team/img-4@1-354-md.jpg 354w, 
+              ./image/team/img-4@1x-450-sm.jpg 450w,
+              ./image/team/img-4@2x-540-lg.jpg 540w,
+              ./image/team/img-4@2x-708-md.jpg 708w,
+              ./image/team/img-4@2x-900-sm.jpg 900w,"
+
+              sizes="(min-width:1200px) 270px, (min-width:768) 354px, 100vw"
+                src="./image/team/img-4@1x-450-sm.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="team__img"
               />
               <div class="team__wrapper">
@@ -463,49 +498,49 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наши партнеры -->
       <section class="partners section">
         <div class="container">
           <h2 class="section-title partners__title">Постоянные клиенты</h2>
           <ul class="partners__list card-set list">
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon">
                   <use href="./image/icons.svg#logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon" width="41" height="47">
                   <use href="./image/icons.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon" width="41" height="47">
                   <use href="./image/icons.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon" width="41" height="47">
                   <use href="./image/icons.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon" width="41" height="47">
                   <use href="./image/icons.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners__item">
+            <li class="partners__item card-set-iteam">
               <a href="" class="partners__link" rel="noopener noreferrer">
                 <svg class="partners__icon" width="41" height="47">
                   <use href="./image/icons.svg#logo-5"></use>
