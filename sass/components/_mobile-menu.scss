@@ -1,4 +1,4 @@
-.mobile-menu{
+.mobile-menu {
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     z-index: 100;
+    overflow: scroll;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
@@ -24,34 +25,38 @@
     background-color: var(--bg-main-color);
     transform: translateX(100%);
     transition: transform var(--transition);
-    
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 
     &.is-open {
         transform: translateX(0);
-    //     opacity: 1;
-    //     pointer-events: initial;
-    //     visibility: visible;
+        //     opacity: 1;
+        //     pointer-events: initial;
+        //     visibility: visible;
     }
 }
-.menu-overlay .mobile-menu{
-   position: absolute;
-   top: 10px;
-   right: 15px;
+
+.menu-overlay .mobile-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
+.mobile-list{
+    margin-bottom: 306px;
+}
 
-.mobile-list__iteam{
+.mobile-list__iteam {
     margin-bottom: 32px;
 }
 
-.mobile-list__iteam:last-child{
+.mobile-list__iteam:last-child {
     margin-bottom: 0;
 }
 
-.mobile-list__link{
+.mobile-list__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -60,25 +65,24 @@
 }
 
 .mobile-contacts {
-    margin-top: auto;
     margin-bottom: 64px;
 
-    &__iteam{
+    &__iteam {
         margin-bottom: 32px;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
 
-    &__link{
+    &__link {
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 0.02em;
         color: var(--second-text-color);
 
-        &--accent{
+        &--accent {
             font-weight: 500;
             font-size: 32px;
             line-height: calc(40 / 32);
@@ -89,31 +93,24 @@
 }
 
 
-.mobile-social{
+.mobile-social {
     display: flex;
     flex-wrap: wrap;
+    line-height: 2;
 
-    &__iteam{
+    &__iteam:not(:last-child) {
         margin-right: 10px;
-
-        &:last-child{
-            margin-right: 0;
-        }
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
 
     }
 
-    &__link{
+    &__link {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.02em;
         color: var(--hover-text-color);
 
-        &::after{
-            content: "";
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            margin-left: 10px;
-        }
     }
 }
-

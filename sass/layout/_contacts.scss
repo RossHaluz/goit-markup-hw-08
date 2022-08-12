@@ -55,6 +55,11 @@
             line-height: calc(14 / 12);
         }
 
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: calc(16 / 14);
+        }
+
         &:hover,
         &:focus{
             color: var(--hover-text-color);
