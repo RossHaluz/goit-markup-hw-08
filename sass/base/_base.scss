@@ -5,6 +5,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     padding-top: 81px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+    }
 }
 
 .no-scroll {

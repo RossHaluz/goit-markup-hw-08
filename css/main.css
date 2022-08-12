@@ -49,6 +49,11 @@ body {
   color: var(--second-text-color);
   padding-top: 81px;
 }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+}
 
 .no-scroll {
   overflow: hidden;
@@ -180,7 +185,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   line-height: 1.8;
   letter-spacing: 0.06em;
   border-radius: 4px;
@@ -192,6 +197,11 @@ img {
   transition: background-color var(--transition);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    padding: 10px 32px;
+  }
 }
 .btn:hover {
   background-color: var(--button-hover);
@@ -843,25 +853,69 @@ img {
 
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero.jpg");
+  background-size: cover;
   margin: 0 auto;
   background-position: center;
   max-width: 1600px;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@1x_sm.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@1x_sm.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@2x_sm.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@2x_sm.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@1x_md.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@1x_md.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@2x_md.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@2x_md.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@1x_lg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@1x_lg.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero/hero@2x_lg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero@2x_lg.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 @media screen and (min-width: 768px) {
