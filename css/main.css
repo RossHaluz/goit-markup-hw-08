@@ -603,8 +603,8 @@ img {
 }
 .mobile-contacts__link--accent {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--hover-text-color);
 }
@@ -613,6 +613,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .mobile-social__iteam {
   margin-right: 10px;
