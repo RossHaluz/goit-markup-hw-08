@@ -31,12 +31,14 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__iteam">
-                <a href="./index.html" class="nav__link link"
-                  >Студия</a
-                >
+                <a href="./index.html" class="nav__link link">Студия</a>
               </li>
               <li class="nav__iteam">
-                <a href="./portfolio.html" class="nav__link link nav__link--current">Портфолио</a>
+                <a
+                  href="./portfolio.html"
+                  class="nav__link link nav__link--current"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav__iteam">
                 <a href="" class="nav__link link">Контакты</a>
@@ -65,9 +67,8 @@
               >
             </li>
           </ul>
-
           <button
-            type="buttom"
+            type="button"
             class="mobile-menu"
             aria-expanded="false"
             data-menu-open
@@ -86,29 +87,61 @@
           </button>
 
           <div class="menu-overlay" data-menu>
-        <button class="mobile-menu" type="button" data-menu-close>
-          <svg class="menu-close-icon" width="40" height="40">
-            <use href="./image/icons.svg#menu-close"></use>
-          </svg>
-        </button>
+            <button class="mobile-menu" type="button" data-menu-close>
+              <svg class="menu-close-icon" width="40" height="40">
+                <use href="./image/icons.svg#menu-close"></use>
+              </svg>
+            </button>
 
-        <ul class="mobile-list list">
-          <li class="mobile-list__iteam"><a href="./index.html" class="mobile-list__link link">Студія</a></li>
-          <li class="mobile-list__iteam"><a href="./portfolio.html" class="mobile-list__link link nav__link--current">Портфоліо</a></li>
-          <li class="mobile-list__iteam"><a href="" class="mobile-list__link link">Контакти</a></li>
-        </ul>
+            <ul class="mobile-list list">
+              <li class="mobile-list__iteam">
+                <a href="./index.html" class="mobile-list__link link">Студія</a>
+              </li>
+              <li class="mobile-list__iteam">
+                <a
+                  href="./portfolio.html"
+                  class="mobile-list__link nav__link--current link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-list__iteam">
+                <a href="" class="mobile-list__link link">Контакти</a>
+              </li>
+            </ul>
 
-          <ul class="mobile-contacts list">
-            <li class="mobile-contacts__iteam"><a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--accent link">+38 096 111 11 11</a></li>
-            <li class="mobile-contacts__iteam"><a href="mailto:info@devstudio.com" class="mobile-contacts__link link">info@devstudio.com</a></li>
-          </ul>
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__iteam">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-contacts__link mobile-contacts__link--accent link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__iteam">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-          <ul class="mobile-social list">
-            <li class="mobile-social__iteam"><a href="" class="mobile-social__link link">Instagram</a></li>
-            <li class="mobile-social__iteam"><a href="" class="mobile-social__link link">Twitter</a></li>
-            <li class="mobile-social__iteam"><a href="" class="mobile-social__link link">Facebook</a></li>
-            <li class="mobile-social__iteam"><a href="" class="mobile-social__link link">Linkedin</a></li>
-          </ul>
+            <ul class="mobile-social list">
+              <li class="mobile-social__iteam">
+                <a href="" class="mobile-social__link link">Instagram</a>
+              </li>
+              <li class="mobile-social__iteam">
+                <a href="" class="mobile-social__link link">Twitter</a>
+              </li>
+              <li class="mobile-social__iteam">
+                <a href="" class="mobile-social__link link">Facebook</a>
+              </li>
+              <li class="mobile-social__iteam">
+                <a href="" class="mobile-social__link link">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -148,8 +181,8 @@
             </li>
           </ul>
 
-    <!--Кейси-->
-    <ul class="portfolio-list card-set list">
+          <!--Кейси-->
+          <ul class="portfolio-list card-set list">
             <li class="portfolio-list__iteam card-set-iteam">
               <a
                 class="portfolio-list__link link"
@@ -159,20 +192,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-1@1x-lg.jpg 1x, ./image/portfolio/img-1@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-1@1x-md.jpg 1x, ./image/portfolio/img-1@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-1@1x-sm.jpg 1x, ./image/portfolio/img-1@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-1@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-1@1x-lg.jpg 1x,
+                        ./image/portfolio/img-1@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-1@1x-md.jpg 1x,
+                        ./image/portfolio/img-1@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-1@1x-sm.jpg 1x,
+                        ./image/portfolio/img-1@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-1@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
                   </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -190,21 +243,41 @@
                 rel="noopener noreferrer"
               >
                 <div class="portfolio-list__thumb">
-                    <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-2@1x-lg.jpg 1x, ./image/portfolio/img-2@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-2@1x-md.jpg 1x, ./image/portfolio/img-2@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-2@1x-sm.jpg 1x, ./image/portfolio/img-2@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-2@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-2@1x-lg.jpg 1x,
+                        ./image/portfolio/img-2@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-2@1x-md.jpg 1x,
+                        ./image/portfolio/img-2@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-2@1x-sm.jpg 1x,
+                        ./image/portfolio/img-2@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-2@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -224,21 +297,41 @@
                 rel="noopener noreferrer"
               >
                 <div class="portfolio-list__thumb">
-                 <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-3@1x-lg.jpg 1x, ./image/portfolio/img-3@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-3@1x-md.jpg 1x, ./image/portfolio/img-3@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-3@1x-sm.jpg 1x, ./image/portfolio/img-3@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-3@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-3@1x-lg.jpg 1x,
+                        ./image/portfolio/img-3@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-3@1x-md.jpg 1x,
+                        ./image/portfolio/img-3@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-3@1x-sm.jpg 1x,
+                        ./image/portfolio/img-3@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-3@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -257,20 +350,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-4@1x-lg.jpg 1x, ./image/portfolio/img-4@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-4@1x-md.jpg 1x, ./image/portfolio/img-4@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-4@1x-sm.jpg 1x, ./image/portfolio/img-4@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-4@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-4@1x-lg.jpg 1x,
+                        ./image/portfolio/img-4@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-4@1x-md.jpg 1x,
+                        ./image/portfolio/img-4@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-4@1x-sm.jpg 1x,
+                        ./image/portfolio/img-4@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-4@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -289,20 +402,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-5@1x-lg.jpg 1x, ./image/portfolio/img-5@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-5@1x-md.jpg 1x, ./image/portfolio/img-5@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-5@1x-sm.jpg 1x, ./image/portfolio/img-5@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-5@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-5@1x-lg.jpg 1x,
+                        ./image/portfolio/img-5@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-5@1x-md.jpg 1x,
+                        ./image/portfolio/img-5@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-5@1x-sm.jpg 1x,
+                        ./image/portfolio/img-5@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-5@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -320,21 +453,41 @@
                 rel="noopener noreferrer"
               >
                 <div class="portfolio-list__thumb">
-                 <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-6@1x-lg.jpg 1x, ./image/portfolio/img-6@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-6@1x-md.jpg 1x, ./image/portfolio/img-6@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-6@1x-sm.jpg 1x, ./image/portfolio/img-6@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-6@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-6@1x-lg.jpg 1x,
+                        ./image/portfolio/img-6@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-6@1x-md.jpg 1x,
+                        ./image/portfolio/img-6@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-6@1x-sm.jpg 1x,
+                        ./image/portfolio/img-6@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-6@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -355,20 +508,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-7@1x-lg.jpg 1x, ./image/portfolio/img-7@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-7@1x-md.jpg 1x, ./image/portfolio/img-7@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-7@1x-sm.jpg 1x, ./image/portfolio/img-7@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-7@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-7@1x-lg.jpg 1x,
+                        ./image/portfolio/img-7@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-7@1x-md.jpg 1x,
+                        ./image/portfolio/img-7@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-7@1x-sm.jpg 1x,
+                        ./image/portfolio/img-7@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-7@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -387,20 +560,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-8@1x-lg.jpg 1x, ./image/portfolio/img-8@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-8@1x-md.jpg 1x, ./image/portfolio/img-8@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-8@1x-sm.jpg 1x, ./image/portfolio/img-8@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-8@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-8@1x-lg.jpg 1x,
+                        ./image/portfolio/img-8@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-8@1x-md.jpg 1x,
+                        ./image/portfolio/img-8@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-8@1x-sm.jpg 1x,
+                        ./image/portfolio/img-8@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-8@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -419,20 +612,40 @@
               >
                 <div class="portfolio-list__thumb">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./image/portfolio/img-9@1x-lg.jpg 1x, ./image/portfolio/img-9@2x-lg.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./image/portfolio/img-9@1x-md.jpg 1x, ./image/portfolio/img-9@2x-md.jpg 2x">
-                    <source media="(max-width: 768px)" srcset="./image/portfolio/img-9@1x-sm.jpg 1x, ./image/portfolio/img-9@2x-sm.jpg 2x">
-                  <img
-                    src="./image/portfolio/img-9@1x-sm.jpg"
-                    alt="Технокряк"
-                    width="450"
-                    height="294"
-                  />
-                    </picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/portfolio/img-9@1x-lg.jpg 1x,
+                        ./image/portfolio/img-9@2x-lg.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-9@1x-md.jpg 1x,
+                        ./image/portfolio/img-9@2x-md.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./image/portfolio/img-9@1x-sm.jpg 1x,
+                        ./image/portfolio/img-9@2x-sm.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./image/portfolio/img-9@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-list__thumb-text">
                     <p class="portfolio-list__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
                     </p>
                   </div>
                 </div>
@@ -537,6 +750,6 @@
     </footer>
 
     <!-- Script  -->
-        <script src="./js/menu_mobile.js"></script>
+    <script src="./js/menu_mobile.js"></script>
   </body>
 </html>
