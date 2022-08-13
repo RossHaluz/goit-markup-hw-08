@@ -1,13 +1,19 @@
 .work {
     padding-bottom: 94px;
 
+    &{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--indent);
+        --items: 3;
+    }
+
         &__title {
             margin-bottom: 50px;
         }
     
         &__iteam {
             position: relative;
-            flex-basis: calc((100% - 60px) / 3);
         }
     
         &__text {
@@ -25,7 +31,7 @@
             background-color: var(--work-bg-color);
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1200px) {
             display: none;
         }
 }

@@ -1,5 +1,16 @@
-.portfolio-list__iteam {
-    flex-basis: calc((100% - 60px) / 3);
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+    --items: 1;
+
+    @media screen and (min-width:768px) {
+        --items:2;
+    }
+
+        @media screen and (min-width:1200px) {
+            --items: 3;
+        }
 }
 
 .portfolio-list__link {
