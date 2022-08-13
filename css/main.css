@@ -1303,16 +1303,28 @@ img {
 }
 
 .portfolio-filter-list {
-  margin-bottom: 40px;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   gap: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  --items: 4;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter-list {
+    margin-bottom: 48px;
+  }
 }
 .portfolio-filter-list__btn {
   padding: 6px 22px;
