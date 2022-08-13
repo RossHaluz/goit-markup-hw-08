@@ -542,11 +542,16 @@ img {
   background-color: transparent;
   border: transparent;
   margin: 0;
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+.mobile-menu:hover, .mobile-menu :focus {
+  fill: var(--hover-text-color);
 }
 
 .menu-overlay {
