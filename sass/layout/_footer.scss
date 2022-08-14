@@ -10,7 +10,6 @@
     
         &__logo {
             display: inline-block;
-            margin-bottom: 20px;
 
             &--white{
                 color: var(--white-text-color);
@@ -21,20 +20,28 @@
 .footer__flex{
     @media screen and (max-width: 1200px) {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
+        flex-direction: row;
     }
 }
 
 .footer-tablet-flex{
+display: flex;
+flex-direction: column;
+gap: 60px;
+
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: row;
         align-items: baseline;
         justify-content: space-around;
-        margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
         justify-content: unset;
@@ -42,17 +49,16 @@
         gap: 70px;
     }
 }
+.footer-mailing{
+    @media screen and (min-width:1200px){
+        margin-left: auto;
+    }
+}
 
 .footer-address {
     font-style: inherit;
     color: rgba(255, 255, 255, 0.6);
 
-    &__list {
-        @media screen and (max-width: 767px) {
-            margin-top: 0;
-            margin-bottom: 60px;
-        }
-        }
     
     &__item {
         transition: color var(--transition);
@@ -79,13 +85,6 @@
 }
 
 
-.footer-mailing {
-    margin-left: auto;
-
-    @media screen and (max-width: 1200px) {
-        margin-top: 60px;
-    }
-}
 
 .footer-subscribe__title {
     display: block;
