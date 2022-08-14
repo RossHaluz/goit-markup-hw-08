@@ -24,11 +24,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow: scroll;
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    max-height: 609px;
+    min-height: 609px;
     background: var(--bg-main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -166,6 +165,7 @@
     gap: 7px;
     margin-bottom: 30px;
 }
+
 
 .primes__link {
     color: var(--hover-text-color);
