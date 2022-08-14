@@ -505,6 +505,11 @@ img {
   margin-bottom: 30px;
 }
 
+.primes__icons {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .primes__link {
   color: var(--hover-text-color);
   text-decoration: underline;

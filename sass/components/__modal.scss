@@ -168,7 +168,9 @@
     gap: 7px;
     margin-bottom: 30px;
 }
-
+.primes__icons{
+    flex-shrink: 0;
+}
 
 .primes__link {
     color: var(--hover-text-color);
