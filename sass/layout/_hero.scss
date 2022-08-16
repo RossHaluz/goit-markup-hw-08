@@ -10,6 +10,10 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url("../image/hero/hero@1x_sm.jpg");
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../image/hero/hero@1x_sm.webp");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -18,6 +22,10 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url("../image/hero/hero@2x_sm.jpg");
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url("../image/hero/hero@2x_sm.webp");
     }
 
     @media screen and (min-width: 768px) {
@@ -26,6 +34,11 @@
                 rgba(47, 48, 58, 0.4)),
             url("../image/hero/hero@1x_md.jpg");
 
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url("../image/hero/hero@1x_md.webp");
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -33,6 +46,10 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url("../image/hero/hero@2x_md.jpg");
+                background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url("../image/hero/hero@2x_md.webp");
         }
     }
 
@@ -41,6 +58,10 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url("../image/hero/hero@1x_lg.jpg");
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url("../image/hero/hero@1x_lg.webp");
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -49,6 +70,10 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url("../image/hero/hero@2x_lg.jpg");
+                background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url("../image/hero/hero@2x_lg.webp");
         }
     }
 
